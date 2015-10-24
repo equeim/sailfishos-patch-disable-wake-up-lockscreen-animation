@@ -1,0 +1,21 @@
+--- a/usr/share/lipstick-jolla-home-qt5/lockscreen/LockScreen.qml
++++ b/usr/share/lipstick-jolla-home-qt5/lockscreen/LockScreen.qml
+@@ -36,7 +36,7 @@
+                 anchors.fill: lockScreenPage
+                 openRadius: 0.75
+                 softness: 0.7
+-                animated: lipstickSettings.blankingPolicy == "default"
++                animated: false
+ 
+                 onActiveChanged: {
+                     if (active) {
+@@ -219,8 +219,7 @@
+ 
+                 readonly property real peekOffset: peekFilter.progress * peekFilter.threshold
+                 readonly property bool lowPowerMode: lipstickSettings.lowPowerMode
+-                readonly property bool lockScreenAnimated: lipstickSettings.blankingPolicy == "default"
+-                            && !lockScreenPage.displayOnFromLowPowerMode
++                readonly property bool lockScreenAnimated: false
+ 
+                 readonly property bool pendingPannableItem: deviceLockItem.locked || needPinQuery
+ 

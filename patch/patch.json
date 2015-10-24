@@ -1,0 +1,8 @@
+{
+    "name": "Disable wake up lockscreen animation",
+    "description": "Disable wake up lockscreen animation",
+    "category": "homescreen",
+    "infos": {
+        "maintainer": "equeim"
+    }
+}
